@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Suspense } from 'react'
 
-function App() {
+import { GlobalStyle } from './styles'
+import Section from './components/Section'
+import Hero from './components/Hero'
+import WebDeveloper from './components/WebDeveloper'
+import Illustrator from './components/Illustrator'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+
+const App = () => {
+  const sectionItems = [
+    Hero,
+    WebDeveloper,
+    Illustrator,
+    Contact
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Suspense fallback={<div style={{ height: '6000px' }}></div>}>
+      <GlobalStyle />
+      {sectionItems.map((SectionItem, idx) => (
+        <Section index={idx} key={idx}>
+          <SectionItem />
+        </Section>
+      ))}
+      <Footer />
+    </Suspense>
+  )
 }
 
-export default App;
+export default App
