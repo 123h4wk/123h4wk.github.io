@@ -1,0 +1,17 @@
+.bl_imageLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 2rem;
+}
+
+.bl_imageLinks_item > svg {
+  width: 2.8rem;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+.bl_imageLinks_item > svg:hover {
+  transform: scale(1.1);
+}

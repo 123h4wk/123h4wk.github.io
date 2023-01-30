@@ -1,0 +1,35 @@
+<% var title = 'お問い合わせ' %>
+
+<%- include('/header', { title }) %>
+
+<main>
+  <div class="ly_container bl_contact">
+    <form id="contactFormId" class="bl_formCtrlWrapper">
+      <div class="bl_formCtrl">
+        <label for="nameId">お名前</label>
+        <input id="nameId" name="name" type="text" placeholder="田中太郎" required>
+      </div>
+      <div class="bl_formCtrl">
+        <label for="emailId">メールアドレス</label>
+        <input id="emailId" name="email" type="email" placeholder="email@example.com" required>
+      </div>
+      <div class="bl_formCtrl">
+        <label for="textareaId">お問い合わせ</label>
+        <textarea id="textareaId" name="body" placeholder="お問い合わせ内容" rows="10" required></textarea>
+      </div>
+      <button class="bl_contact_btn" type="submit">送信</button>
+    </form>
+  </div>
+  <template id="successTemplateId">
+    <div class="bl_contact_message">
+      <p>ありがとうございます。<br/>お問い合わせを受け付けました。</p>
+    </div>
+  </template>
+  <template id="errorTemplateId">
+    <div class="bl_contact_message bl_contact_message__error">
+      <p>申し訳ありません。<br/>処理中にエラーが発生しました。</p>
+    </div>
+  </template>
+</main>
+
+<%- include('/footer') %>

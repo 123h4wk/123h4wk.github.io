@@ -1,0 +1,22 @@
+<% var selected = (page) => page === title ? 'bl_headerMenu__selected' : '' %>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一二三鷹@123h4wkのホームページです。">
+  <title><%= title %> | 123h4wk</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/index.css">
+  <script defer src="/assets/index.js"></script>
+</head>
+<body>
+  <header class="ly_header">
+    <div class="ly_container">
+      <nav class="bl_headerMenuWrapper">
+        <a class="bl_headerMenu <%= selected('ホーム') %>" href="/">ホーム</a>
+        <a class="bl_headerMenu <%= selected('お問い合わせ') %>" href="/contact.html">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>

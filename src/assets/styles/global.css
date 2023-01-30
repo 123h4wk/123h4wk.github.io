@@ -1,0 +1,39 @@
+:root {
+  --color-base: #291736;
+  --color-light: #510098;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+span,
+label,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  letter-spacing: 0.07em;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    'BIZ UDPGothic', Meiryo, sans-serif;
+  color: var(--color-base);
+  background-color: #fff;
+}

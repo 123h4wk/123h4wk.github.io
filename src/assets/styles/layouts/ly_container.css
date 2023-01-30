@@ -1,0 +1,15 @@
+.ly_container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 481px) {
+  .ly_container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .ly_container {
+    max-width: 950px;
+  }
+}

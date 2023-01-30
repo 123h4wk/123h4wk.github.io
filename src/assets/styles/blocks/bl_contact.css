@@ -1,0 +1,43 @@
+.bl_contact {
+  margin: 0 auto;
+  padding: 2.5rem;
+  max-width: 650px;
+}
+
+.bl_contact_btn {
+  border: 1px transparent;
+  border-radius: 0.4rem;
+  background-color: var(--color-base);
+  width: 12rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bl_contact_btn:hover,
+.bl_contact_btn:focus {
+  background-color:#3e314a;
+}
+
+.bl_contact_btn:disabled {
+  background-color: #aaa;
+}
+
+.bl_contact_message {
+  background-color: #ecf2ff;
+  border: 1px transparent;
+  border-radius: 0.4rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  color: #1d2751;
+}
+
+.bl_contact_message__error {
+  background-color: #ffecec;
+  color: #cd0000;
+}

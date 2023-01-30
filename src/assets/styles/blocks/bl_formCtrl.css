@@ -1,0 +1,31 @@
+.bl_formCtrlWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bl_formCtrl {
+  display: block;
+}
+
+.bl_formCtrl > label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+}
+
+.bl_formCtrl > input,
+.bl_formCtrl > textarea {
+  display: block;
+  border: 1px solid #888;
+  border-radius: 0.4rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.bl_formCtrl > textarea {
+  resize: vertical;
+}
